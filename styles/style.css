@@ -123,6 +123,23 @@ body {
     transform: translate(5px, -5px);
 }
 
+.button1custom {
+    font-size: 1rem;
+    padding: 0.8em 2em;
+    background-color: #242c7c;
+    border: 3px solid #fcdd0d;
+    border-radius: 0.8em;
+    color: #fff;
+    font-weight: bolder;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+    text-decoration: none;
+    margin-left: -0.3rem;
+}
+
+.button1custom:hover {
+    background-color: #181d53;
+}
+
 .form-check {
     font-size: large;
     margin-bottom: 15px;
@@ -455,4 +472,11 @@ body {
     .sampletext1 {
         margin-top: 5rem;
     }
+
+    .card-img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+   
 }
