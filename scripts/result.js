@@ -2,35 +2,22 @@ let correctas = localStorage.getItem('correct');
 let incorrectas = localStorage.getItem('incorrect');
 let incorrectasArray = JSON.parse(localStorage.getItem('incorrectasArray'));
 let incorrectasUserSelection = JSON.parse(localStorage.getItem('incorrectasUserSelection'));
-console.log(incorrectasArray);
-console.log(incorrectasUserSelection);
+
 
 let total = parseInt(correctas) + parseInt(incorrectas);
-console.log(total);
-
-console.log(correctas);
-console.log(incorrectas);
+let porcentaje = (total * 80) / 100;
+console.log(porcentaje);
 
 let result = document.getElementById("result");
 let phrase = document.getElementById('suggest');
 result.innerHTML = `Obtuvo ${correctas} correctas y ${incorrectas} incorrectas: `;
 
-if (total == 133) {
-    if (incorrectas > 33) {
-        phrase.innerHTML = "Deberías practicar más";
-    }
-    else {
-        phrase.innerHTML = "Estás listo para simular la prueba"
-    }
-}
 
-if (total == 10) {
-    if (incorrectas > 3) {
-        phrase.innerHTML = "Deberías practicar más";
-    }
-    else {
-        phrase.innerHTML = "Estás listo para simular la prueba"
-    }
+if(correctas < porcentaje){
+    phrase.innerHTML = "Deberías practicar más";
+}
+else{
+    phrase.innerHTML = "Estás listo para simular la prueba"
 }
 
 if (incorrectasArray.length > 0) {
