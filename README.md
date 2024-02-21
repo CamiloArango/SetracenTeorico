@@ -39,8 +39,8 @@ Para utilizar este proyecto en tu computadora local, sigue estos pasos:
 
 ## Contribuyentes
 
-- Camilo Arango - Desarrollo principal
-- Luis Santos - Colaborador
+- Camilo Arango - Desarrollador
+- Luis Santos - Desarrollador
 
 ## Licencia
 
@@ -52,7 +52,3 @@ Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con noso
 
 - Correo electrónico: [camiloarangoe@protonmail.com]
 - [Sitio web del proyecto](www.sertracteorico.com)
-
-## Agradecimientos
-
-Agradecemos a todos los contribuyentes y a la comunidad por su apoyo en el desarrollo de este proyecto.
