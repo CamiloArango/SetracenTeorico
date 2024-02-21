@@ -16,7 +16,6 @@ body {
 .content2 {
     background-color: #242c7c;
     margin-top: 15rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .heading {
@@ -292,6 +291,18 @@ body {
 
 .card {
     border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 200px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-quiz {
+    border-radius: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
@@ -314,9 +325,18 @@ body {
     margin-top: 10rem;
 }
 
+a {
+    text-decoration: none;
+
+}
 
 /*X-Large devices (large desktops, less than 1400px)*/
-@media (max-width: 1399.98px) {}
+@media (max-width: 1399.98px) {
+    .card {
+        width: 100%;
+        height: 100%;
+    }	
+}
 
 /*Large devices (desktops, less than 1200px)*/
 @media (max-width: 1199.98px) {
@@ -476,6 +496,11 @@ body {
     .card-img{
         height: 100%;
         object-fit: cover;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
     }
 
    
